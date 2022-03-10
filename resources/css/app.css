@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input[type="text"], textarea {
+
+    background-color : transparent;
+
+}

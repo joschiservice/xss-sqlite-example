@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         DB::table("users")->truncate();
         DB::table('posts')->insert([
             'title' => "Persistentes XSS",
-            'content' => 'Dieser Beitrag enthält ein Script, dass in der Datenbank der Webseite gespeichert worden ist, zur Sammlung von Geräteinformationen. Das Skript wird automatisch mit dem Aufrufen dieser Seite ausgeführt.<script>alert("Über einen persitenten XSS-Angriff konnten wir Informationen über dein Gerät abfangen und können diese nun ohne dein Wissen weiterverarbeiten.\nGeräteinformationen: " + navigator.userAgent)</script>',
+            'content' => 'Dieser Beitrag enthält ein Script, dass in der Datenbank der Webseite gespeichert worden ist, zur Sammlung von Geräteinformationen. Das Skript wird automatisch mit dem Aufrufen dieser Seite ausgeführt.<script>alert("Über einen persistenten XSS-Angriff konnten wir Informationen über dein Gerät sammeln und könnten diese nun ohne dein Wissen weiterverarbeiten.\nGeräteinformationen: " + navigator.userAgent)</script>',
         ]);
         \App\Models\User::factory(10)->create();
         \App\Models\Post::factory(10)->create();

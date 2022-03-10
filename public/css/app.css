@@ -440,14 +440,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
   margin-right: auto;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -477,6 +469,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-10 {
   margin-top: 2.5rem;
+}
+.mr-4 {
+  margin-right: 1rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.ml-8 {
+  margin-left: 2rem;
+}
+.ml-0 {
+  margin-left: 0px;
 }
 .flex {
   display: flex;
@@ -523,12 +527,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .overflow-hidden {
   overflow: hidden;
 }
+.border-2 {
+  border-width: 2px;
+}
 .border-t {
   border-top-width: 1px;
 }
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -537,6 +548,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.bg-transparent {
+  background-color: transparent;
 }
 .p-6 {
   padding: 1.5rem;
@@ -554,9 +568,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pt-4 {
-  padding-top: 1rem;
 }
 .text-center {
   text-align: center;
@@ -618,6 +629,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -631,6 +646,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+input[type="text"], textarea {
+
+    background-color : transparent;
+
+}
+
 @media (prefers-color-scheme: dark) {
 
   .dark\:border-gray-700 {
@@ -663,6 +685,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }
+
 @media (min-width: 640px) {
 
   .sm\:ml-0 {
@@ -702,6 +725,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     text-align: right;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:grid-cols-2 {
@@ -716,6 +740,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-left-width: 1px;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:px-8 {
